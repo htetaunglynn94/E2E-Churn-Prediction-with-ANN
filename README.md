@@ -1,4 +1,4 @@
-# End-to-End Customer Churn Prediction with ANN
+# End-to-End Deep Learning Prediction with ANN
 
 ## Project Overview
 
