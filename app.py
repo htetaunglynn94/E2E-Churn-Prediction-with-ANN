@@ -10,9 +10,7 @@ from tensorflow.keras.models import load_model
 # PAGE CONFIG
 # ============================================================
 
-st.set_page_config(page_title = "ANN Prediction App",
-                   page_icon = "🤖",
-                   layout = "wide")
+st.set_page_config(page_title = "Prediction App", layout = "wide")
 
 st.title("ANN Deep Learning Prediction")
 
@@ -56,9 +54,9 @@ with classification_tab:
     gender = st.selectbox(label='Gender', options=class_gender_encoder.classes_,
                           key='class_gender')
     age = st.slider(label='Age', min_value=10, max_value=95, key='class_age')
-    balance = st.number_input(label='Balance', key='class_balance')
+    balance = st.number_input(label='Balance ($)', key='class_balance')
     credit_score = st.number_input(label='Credit Score', key='class_credit_score')
-    estimated_salary = st.number_input(label='Estimated Salary')
+    estimated_salary = st.number_input(label='Estimated Salary ($)')
     tenure = st.slider(label='Tenure', min_value=0, max_value=10, key='class_tenure')
     num_of_products = st.slider(label='Number of Products', min_value=1, max_value=4, key='class_nop')
     has_cr_card = st.radio(label='Has credit card?', options=[1, 0],
@@ -144,7 +142,7 @@ with regression_tab:
                              key='reg_geography')
     gender = st.selectbox(label='Gender', options=reg_gender_encoder.classes_, key='reg_gender')
     age = st.slider(label='Age', min_value=10, max_value=95, key='reg_age')
-    balance = st.number_input(label='Balance', key='reg_balance')
+    balance = st.number_input(label='Balance ($)', key='reg_balance')
     credit_score = st.number_input(label='Credit Score', key='reg_credit_score')
     tenure = st.slider(label='Tenure', min_value=0, max_value=10, key='reg_tenure')
     num_of_products = st.slider(label='Number of Products', min_value=1, max_value=4, key='reg_nop')
@@ -155,8 +153,7 @@ with regression_tab:
                                 format_func=lambda x: 'Yes' if x == 1 else 'No',
                                 key='reg_iam')
     is_exited = st.radio(label='Is exited?', options=[1, 0],
-                         format_func=lambda x: 'Yes' if x == 1 else 'No',
-                         key='reg_ie')
+                         format_func=lambda x: 'Yes' if x == 1 else 'No')
 
 
     # -------------------------
