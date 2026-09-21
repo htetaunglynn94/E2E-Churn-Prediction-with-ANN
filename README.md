@@ -15,7 +15,8 @@ Separate preprocessing objects are maintained for each model to ensure that user
 
 ## Live Web Application
 
-[Streamlit App](https://e2e-churn-prediction-with-ann-bcrbm2mg5nupwwv6ouu84q.streamlit.app/)
+[Streamlit App](https://e2e-dl-prediction-with-ann-nnhwmw8gq6j9kkdrwydyn3.streamlit.app/)  
+[Watch the Project Demo Video](https://drive.google.com/file/d/1Uuu_2utJv-Jw3ryEmUGhFVpbVDGTwQSp/view?usp=sharing)
 
 ## Data set information
 [churn_modelling.csv](https://github.com/user-attachments/files/32469321/churn_modelling.csv)
