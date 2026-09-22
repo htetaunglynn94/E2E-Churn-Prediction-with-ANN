@@ -40,7 +40,6 @@ has_cr_card = st.radio(label='Has credit card', options=[1,0],
                        format_func=lambda x: 'Yes' if x ==1 else 'No')
 is_active_member = st.radio(label='Is active member', options=[1,0],
                             format_func=lambda x: 'Yes' if x ==1 else 'No')
-is
 
 # Prepare input data
 
